@@ -1,0 +1,242 @@
+div[class^="task"] {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.task1 > div {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example1 {
+  box-shadow: 10px -5px 20px 5px black;
+}
+
+.example2 {
+  box-shadow: -10px -5px 20px 5px black;
+}
+
+.example3 {
+  box-shadow: 0px 0px 15px 3.5px inset black;
+}
+
+.example4 {
+  border: 5px solid white;
+  box-shadow: 0px 0px 8px 8px black;
+}
+
+.example5Border {
+  background: linear-gradient(
+        white 0%,
+        white 22%,
+        green 22%,
+        green 78%,
+        white 78%,
+        white 100%
+      )
+      left/10% 100%,
+    linear-gradient(red 50%, blue 50%) center/60% 100%,
+    linear-gradient(
+        white 0%,
+        white 22%,
+        yellow 22%,
+        yellow 78%,
+        white 78%,
+        white 100%
+      )
+      right / 10% 100%;
+}
+
+.example6Border {
+  background: linear-gradient(red 0%, red 25%, white 25%, white 100%) left/25%
+      100%,
+    linear-gradient(white 0%, white 75%, red 75%, red 100%) right / 25% 100%;
+}
+
+.example5Border,
+.example6Border {
+  position: absolute;
+  z-index: -1;
+  width: 110px;
+  height: 110px;
+  background-repeat: no-repeat;
+}
+
+/* ///////////////////////////////////// */
+
+.task2 {
+  margin-top: 5%;
+}
+
+.task2 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block1Content,
+.block2Content {
+  width: 200px;
+  height: 100px;
+  background: rgb(255, 255, 255);
+}
+
+.block1Border {
+  background: linear-gradient(#1b1bf7, #016e10, #34a032) left/20% 100%,
+    linear-gradient(#3b11d4, #bfdd27) center/60% 100%,
+    linear-gradient(#fa302c, #fcc319, #f8f83b) right / 20% 100%;
+  filter: blur(3.5px);
+  border-radius: 5px;
+}
+
+.block2Border {
+  background: linear-gradient(
+        #7f7fff 0%,
+        #7f7fff 20%,
+        #4080ff 20%,
+        #4080ff 80%,
+        #81ffff 80%,
+        #81ffff 100%
+      )
+      left/10% 100%,
+    linear-gradient(#8041c0, #80ffc0) center/80% 100%,
+    linear-gradient(
+        #ff7f80 0%,
+        #ff7f80 20%,
+        #ff8040 20%,
+        #ff8040 80%,
+        #fffe7e 80%,
+        #fffe7e 100%
+      )
+      right / 10% 100%;
+  filter: blur(1px);
+}
+
+.block1Border,
+.block2Border {
+  position: absolute;
+  z-index: -1;
+  width: 220px;
+  height: 120px;
+  background-repeat: no-repeat;
+}
+
+/* //////////////////////////////////////////// */
+
+.task3 {
+  margin: 10% 0%;
+  width: 100%;
+}
+
+.task3 div[class^="example"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+
+.part1 {
+  width: 700px;
+  height: 500px;
+  font-size: 30px;
+  margin-bottom: 10%;
+  margin-right: 10px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.examplePartBlock {
+  display: flex;
+  flex-wrap: wrap;
+  width: 72%;
+  position: relative;
+}
+
+.exampleD1 {
+  background-color: #4f81bd;
+  width: 100%;
+  height: 300px;
+}
+
+.exampleA1 {
+  background-color: #8064a2;
+  width: 40%;
+  height: 200px;
+}
+
+.exampleC1 {
+  background-color: #f79646;
+  width: 28%;
+  height: 500px;
+}
+
+.exampleB1 {
+  background-color: #9bbb59;
+  width: 60%;
+  height: 200px;
+}
+
+/*  */
+
+.part2 {
+  width: 600px;
+  height: 500px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exampleE2 {
+  background-color: #c0504d;
+  width: 300px;
+  top: -105%;
+  z-index: 1;
+  left: 25%;
+  height: 300px;
+  position: relative;
+}
+
+.exampleD2 {
+  background-color: #9bbb59;
+  width: 250px;
+  height: 200px;
+  top: 25%;
+  left: 8.4%;
+  z-index: 1;
+  position: relative;
+}
+
+.exampleC2 {
+  width: 350px;
+  background-color: #f79646;
+  top: -100%;
+  left: 42%;
+  height: 200px;
+  position: relative;
+}
+
+.exampleB2 {
+  background-color: #8064a2;
+  width: 300px;
+  height: 300px;
+  top: -40%;
+  z-index: 2;
+  position: relative;
+}
+
+.exampleA2 {
+  width: 600px;
+  background-color: #4f81bd;
+  top: 80%;
+  height: 200px;
+  position: relative;
+}
